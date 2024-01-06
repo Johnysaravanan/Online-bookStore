@@ -1,0 +1,100 @@
+.Bhead {
+    font-family: 'Bubblegum Sans', sans-serif;
+    margin-top: 0;
+    transform-origin: 0%;
+    transition-property: all;
+    transition: ease-in;
+    color: black;
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+    background-image: url('../src/planet-581239_1280.webp');
+    background-size: cover;
+    background-position: center top;
+    margin: auto;
+    padding: auto;
+}
+
+.navitem {
+    padding: auto;
+
+    color: black;
+    text-decoration: none;
+}
+
+.navbtn {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbtn:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 0 0 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.004);
+}
+
+.navitem a {
+    line-height: 1em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+}
+
+.navitem a:hover {
+    color: #292828;
+}
+
+.row li {
+    padding: auto;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+header {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    padding: 30px;
+    resize: horizontal;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+}
+
+
+/* final */
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+  }
+  #header-top {
+    height: 190px;
+    background-color: black;
+    background-image: url('https://iheartcraftythings.com/wp-content/uploads/2021/06/Cloud_5-1.jpg');
+    background-repeat: repeat-x;
+    animation: animatedBackground 5s linear infinite;
+    line-height: 400px;
+    height: 1000px;
+  
+  }
